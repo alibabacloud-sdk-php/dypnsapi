@@ -8,6 +8,7 @@ use AlibabaCloud\Rpc;
 /**
  * Resolve Api based on the method name.
  *
+ * @method GetMobile getMobile(array $options = [])
  * @method CreateVerifyScheme createVerifyScheme(array $options = [])
  * @method VerifyMobile verifyMobile(array $options = [])
  * @method TwiceTelVerify twiceTelVerify(array $options = [])
@@ -27,6 +28,25 @@ class V20170525Rpc extends Rpc
 
     /** @var string */
     public $method = 'POST';
+}
+
+/**
+ * @method string getResourceOwnerId()
+ * @method $this withResourceOwnerId($value)
+ * @method string getAccessCode()
+ * @method $this withAccessCode($value)
+ * @method string getResourceOwnerAccount()
+ * @method $this withResourceOwnerAccount($value)
+ * @method string getOutId()
+ * @method $this withOutId($value)
+ * @method string getOwnerId()
+ * @method $this withOwnerId($value)
+ */
+class GetMobile extends V20170525Rpc
+{
+
+    /** @var string */
+    public $scheme = 'https';
 }
 
 /**
